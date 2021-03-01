@@ -24,8 +24,7 @@ fun Modifier.percentOffsetX(percent: Float): Modifier =
         val placeable = measurable.measure(constraints)
         layout(placeable.width, placeable.height) {
             placeable.placeRelative(
-                (placeable.width.toFloat() * percent).roundToInt(),
-                0
+                (placeable.width.toFloat() * percent).roundToInt(), 0
             )
         }
     }

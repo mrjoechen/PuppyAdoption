@@ -30,12 +30,13 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Card
-import androidx.compose.material.Text
 import androidx.compose.material.Divider
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -49,13 +50,10 @@ import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androiddevchallenge.data.Puppy
 import com.example.androiddevchallenge.ui.ext.percentOffsetX
 import com.example.androiddevchallenge.ui.theme.typography
-import androidx.compose.runtime.livedata.observeAsState
-
-import androidx.lifecycle.viewmodel.compose.viewModel
-
 
 @Composable
 fun DetailPage() {
@@ -148,7 +146,6 @@ fun DetailContent(puppy: Puppy?, percentOffset: Float) {
                         )
                     }
                     Row(modifier = Modifier.padding(top = 3.dp)) { ProfileItem("Age", puppy.age) }
-
                 }
                 Spacer(modifier = Modifier.height(10.dp))
                 Text(text = puppy.story)

@@ -102,9 +102,8 @@ class PagerState(
         _currentPageOffset.animateTo(currentPageOffset.roundToInt().toFloat())
         selectPage()
     }
-
     override fun toString(): String = "PagerState{minPage=$minPage, maxPage=$maxPage, " +
-            "currentPage=$currentPage, currentPageOffset=$currentPageOffset}"
+        "currentPage=$currentPage, currentPageOffset=$currentPageOffset}"
 }
 
 @Immutable
