@@ -22,7 +22,7 @@ object PuppyRepo {
     private val Michaela = Puppy(
             id = 1,
             name = "Michaela",
-            sex = Sex.Male,
+            sex = Sex.Female,
             age = "Adult",
             color = "Yellow",
             location = "Shanghai",
@@ -40,7 +40,7 @@ object PuppyRepo {
     private val Rafael = Puppy(
             id = 2,
             name = "Rafael",
-            sex = Sex.Female,
+            sex = Sex.Male,
             age = "Young",
             color = "White - with Brown or Chocolate",
             location = "Guangzhou",
@@ -58,7 +58,7 @@ object PuppyRepo {
             name = "Cassiel",
             sex = Sex.Female,
             age = "Young",
-            color = "Tan/Yellow/Fawn - with White",
+            color = "White",
             location = "Beijing",
             story = "Hello, my name is Cassiel! I was rescued from the shelter in honor of a dog who suffered a horrible fate there. " +
                     "I love people, but don't get along with most dogs. I am about 3 years old and looking for my forever family. " +
@@ -73,7 +73,7 @@ object PuppyRepo {
             name = "Indira",
             sex = Sex.Female,
             age = "Young",
-            color = "White - with Black",
+            color = "White - with Brown or Chocolate",
             location = "Shanghai",
             story = "Indira was found as a stray by her foster, she is aprox. " +
                     "1 year old, very playful, and will be the perfect fit for an active family who is available to continue her puppy training.",
@@ -87,7 +87,7 @@ object PuppyRepo {
             name = "Claudia",
             sex = Sex.Female,
             age = "4 years old, Young",
-            color = "Tan/Yellow/Fawn - with Black",
+            color = "Brown",
             location = "Hangzhou",
             story = "Claudia is a super smart amazing dog with so much love to give. " +
                     "Claudia is well trained knows all commands sit, heal, go to your bed, stay on your bed, go to your crate, paw she knows it all. " +
@@ -106,15 +106,13 @@ object PuppyRepo {
             name = "Louise",
             sex = Sex.Male,
             age = "Young",
-            color = "Red/Golden/Orange/Chestnut - with White",
+            color = "Brown",
             location = "Shenzhen",
             story = "Louise loves affection, hikes and treats! He's playful and loves hiking in the canyons.His favorite dinner dish is sloppy joes. " +
                     "After dinner he's always excited to cuddle on the couch and watch The Voice. " +
                     "He is crate trained,he walks well on a leash now and wears a front clip harness to walk with. He is dog selective, " +
                     "if introduced correctly he can be good with another dog of his own size. He gets groomed every six weeks for anal gland expression and shedding. " +
-                    "He is Incredibly loving, very smart and figured out how to get into our fridge. " +
-                    "He loves to cuddle. He is very good with my son and checks on him. He has a HUGE prey drive so no cats. " +
-                    "Give us a call to meet this handsome fellow!",
+                    "He is Incredibly loving, very smart and figured out how to get into our fridge. " ,
             images = listOf(
                     R.drawable.puppy_6
             )

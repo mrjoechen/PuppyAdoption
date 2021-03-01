@@ -30,10 +30,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.Button
-import androidx.compose.material.Card
-import androidx.compose.material.Divider
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -155,10 +152,14 @@ fun DetailContent(puppy: Puppy?, percentOffset: Float) {
             Button(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clip(RoundedCornerShape(50)),
-                onClick = {}
+                    .clip(RoundedCornerShape(20)),
+                onClick = {},
+                colors = ButtonDefaults.outlinedButtonColors(
+                    backgroundColor = Color(0xFF03DAC5)
+                )
+
             ) {
-                Text(text = "❤️ Adopt me")
+                Text(text = "Adopt ❤️ me", color = Color.Green)
             }
             Spacer(modifier = Modifier.height(20.dp))
         } else {

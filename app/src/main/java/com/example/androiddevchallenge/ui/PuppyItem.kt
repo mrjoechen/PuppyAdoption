@@ -76,7 +76,7 @@ fun ItemImage(puppy: Puppy, modifier: Modifier = Modifier) {
         contentDescription = null,
         modifier = modifier
             .size(100.dp, 100.dp)
-            .clip(RoundedCornerShape(50.dp))
+            .clip(RoundedCornerShape(20.dp))
 
     )
 }
