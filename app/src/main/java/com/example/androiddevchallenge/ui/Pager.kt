@@ -176,8 +176,6 @@ fun Pager(
                     it.measure(childConstraints) to it.page
                 }
                 .forEach { (placeable, page) ->
-                    // TODO: current this centers each page. We should investigate reading
-                    //  gravity modifiers on the child, or maybe as a param to Pager.
                     val xCenterOffset = (constraints.maxWidth - placeable.width) / 2
                     val yCenterOffset = (constraints.maxHeight - placeable.height) / 2
 
