@@ -137,13 +137,14 @@ fun DetailContent(puppy: Puppy?, percentOffset: Float) {
 
                 Divider(modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp))
                 Column(modifier = Modifier.padding(8.dp)) {
-                    Row(modifier = Modifier.padding(top = 3.dp)) { ProfileItem("Age", puppy.age) }
                     Row(modifier = Modifier.padding(top = 3.dp)) {
                         ProfileItem(
                             "Color",
                             puppy.color
                         )
                     }
+                    Row(modifier = Modifier.padding(top = 3.dp)) { ProfileItem("Age", puppy.age) }
+
                 }
                 Spacer(modifier = Modifier.height(10.dp))
                 Text(text = puppy.story)
